@@ -33,7 +33,9 @@ dados;
 
 -----------------------------------------------**
 
-Introdução a sintaxe básica do T-SQL
+Introdução a sintaxe básica do T-SQL 
+**SELECT - comando select é usado para recuperar DADOS do banco de dados
+ou consultar informações de um banco de dados.
 * EXISTEM QUATRO PROPRIEDADES BÁSICAS DE UM COMANDO SELECT
 
 1) Numero e atributos das colunas dos resultados;
@@ -42,8 +44,49 @@ Introdução a sintaxe básica do T-SQL
 4) Sequencia de ordenação das linhas recuperadas;
 
 EXEMPLO:
-1-SELECT productid, Name, ListPrice
-2-FROM Production.Production
-3-WHERE ListPrice > $40
-4-ORDER BY ListPrice ASC
+1-SELECT productid, Name, ListPrice (CONSULTADO 3 COLUNAS DENTRO DE UMA TABELA)
+2-FROM Production.Production        (ESCOLHENDO A TABELA QUE SERÁ CONSULTADA)
+
+3-WHERE ListPrice > $40             (ESTA CONDIÇÃO ESTÁ DIZENDO PARA TRAZER TODAS
+                                     AS LINHAS DA COLUNA QUE SÃO MAIORES QUE $40)
+
+4-ORDER BY ListPrice ASC            (ESTÁ DIZENDO PARA ORDENAR OS PREÇOS DA CONDIÇÃO
+                                     WHERE SEJA TRAZIDO NA SEGUÊNCIA DO MAIOR PREÇO
+                                     PARA O MENOR)
 -----------------------------------------------**
+
+TIPOS DE OPERADORES SQL
+
+- Os operadores aritméticos executam operações matemáticas em duas expressões de um ou 
+mais tipos de dados. Eles são executados da categoria de tipo de dados numéricos. 
+Para obter mais informações sobre as categorias de tipo de dados, confira Convenções 
+de sintaxe Transact-SQL.
+
+**OPERADORES ARITMÉTICOS (TRANSACT-SQL)
+
+Operador	     Significado
++ (Somar)	     Adição
+- (Subtrair)	 Subtração
+* (Multiplicar)	 Multiplicação
+/ (dividir)	     Divisão
+% (módulo)	     Retorna o resto inteiro de uma divisão. Por exemplo, 12% 5 = 2 porque o resto de 12 dividido por 5 é 2.
+Os operadores de adição (+) e de subtração (-) também podem ser usados para executar operações aritméticas em valores de datetime e smalldatetime.
+
+
+- Aplica-se a: simSQL Server (todas as versões compatíveis)
+Os operadores de comparação testam se duas expressões são iguais. Os operadores de 
+comparação podem ser usados em todas as expressões, exceto em expressões dos tipos de 
+dados text, ntext ou image. A tabela a seguir lista os operadores de comparação Transact-SQL.
+
+**OPERADORES DE COMPARAÇÃO (TRANSACT-SQL)
+
+Operador	Significado
+= (Igual a)	Igual a
+> (Maior que)	Maior que
+< (Menor que)	Menor que
+>= (Maior ou igual a)	Maior ou igual a
+<= (Menor ou igual a)	Menor que ou igual a
+<> (Diferente de)	É diferente de
+!= (Diferente de)	Diferente de (não é padrão ISO)
+!< (Não é menor que)	Não é menor que (não é padrão ISO)
+!> (Não é maior que)	Não é maior que (não é padrão ISO)
