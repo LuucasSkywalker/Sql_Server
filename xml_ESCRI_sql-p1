@@ -53,6 +53,7 @@ EXEMPLO:
 4-ORDER BY ListPrice ASC            (ESTÁ DIZENDO PARA ORDENAR OS PREÇOS DA CONDIÇÃO
                                      WHERE SEJA TRAZIDO NA SEGUÊNCIA DO MAIOR PREÇO
                                      PARA O MENOR)
+
 -----------------------------------------------**
 
 TIPOS DE OPERADORES SQL
@@ -69,8 +70,9 @@ Operador	     Significado
 - (Subtrair)	 Subtração
 * (Multiplicar)	 Multiplicação
 / (dividir)	     Divisão
-% (módulo)	     Retorna o resto inteiro de uma divisão. Por exemplo, 12% 5 = 2 porque o resto de 12 dividido por 5 é 2.
-Os operadores de adição (+) e de subtração (-) também podem ser usados para executar operações aritméticas em valores de datetime e smalldatetime.
+% (módulo)	     Retorna o resto inteiro de uma divisão. Por exemplo, 12% 5 = 2 porque
+ o resto de 12 dividido por 5 é 2. Os operadores de adição (+) e de subtração (-) também
+  podem ser usados para executar operações aritméticas em valores de datetime e smalldatetime.
 
 
 - Aplica-se a: simSQL Server (todas as versões compatíveis)
@@ -90,3 +92,66 @@ Operador	Significado
 != (Diferente de)	Diferente de (não é padrão ISO)
 !< (Não é menor que)	Não é menor que (não é padrão ISO)
 !> (Não é maior que)	Não é maior que (não é padrão ISO)
+
+
+- Os operadores lógicos testam a legitimidade de algumas condições. Os operadores lógicos, como 
+operadores de comparação, retornam um tipo de dados Boolean com um valor TRUE, FALSE ou UNKNOWN.
+
+**OPERADORES LÓGICOS (TRANSACT-SQL)
+
+Operador	Significado
+ALL	TRUE se tudo em um conjunto de comparações for TRUE.
+AND	TRUE se as duas expressões boolianas forem TRUE.
+QUALQUER	TRUE se qualquer conjunto de comparações for TRUE.
+BETWEEN	TRUE se o operando estiver dentro de um intervalo.
+EXISTS	TRUE se uma subconsulta tiver qualquer linha.
+IN	TRUE se o operando for igual a um de uma lista de expressões.
+LIKE	TRUE se o operando corresponder a um padrão.
+NOT	Inverte o valor de qualquer outro operador booliano.
+OR	TRUE se qualquer expressão booliana for TRUE.
+SOME	TRUE se algum conjunto de comparações for TRUE.
+
+-----------------------------------------------**
+
+O que são funções T-SQL
+
+* Rowset: retorna objetos que podem ser usados como tabela.
+Exemplo: CONSTAINSTABLE, OPENDATASOURCE, OPENQUERY;
+
+* AGGREGATE: trabalham em coleções, mas retornam apenas uma linha
+Exemplo: AVG, SUM, COUNT, CHECKSUM_AGG;
+
+* Ranking:  retorna o valor no ranking de cada linha do resultados
+Exemplo: RANK E DENSE_RANK;
+
+* Scalar: Operam em um valor único e retornam um valor único.
+Exemplo: CREATE FUNCTION dbo.ufn_CubicVolume;
+
+-----------------------------------------------**
+
+Comandos controle de fluxo
+
+*BEGIN ... END;
+(comando que determina o inicio e um fim de um bloco de codigos)
+
+*GOTO;
+
+*IF ... ELSE;
+(utilizado para determinar uma condição, igual no JS)
+
+*RETURN;
+(retorna uma procedures ou um resultado de uma função, similar ao JS)
+
+*BREAK;
+(utilizado para sair de um laço, ou um loop de repetição, igual no JS)
+
+*CONTINUE;
+(utlizado para para uma repetição, porém ele não sai do laço, ele retorna
+pro inicio da função)
+
+*WHILE;
+(laço de repetição, mesma função do JS)
+
+*WAITFOR;
+(comando execultado até que determinada ação aconteça, dai execute o resto
+do codigo, igual o FOR do JS)
