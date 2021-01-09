@@ -1,0 +1,49 @@
+Objetos do banco de dados
+
+*Tabelas: Armazenam todas as informações;
+(tabelas são estruturas que armazenam as informações
+do banco de dados)
+
+*Views: agem como uma tabela virtual ou consulta armazenada;
+
+*Indices: recurso para recuperação rápida de informação;
+
+*Tiggers: executa um bloco de codigo sempre que houver um insert,
+updade ou delete;
+
+*Procedures: aceitam parâmentros, blocos de codigo e retornam valores;
+(são exatamente iguais a uma função JS e outros)
+
+*Regras: determinam os valores aceitáveis a serem inseridos em uma coluna;
+
+-----------------------------------------------**
+
+Tipos de dados
+
+*Cada coluna, variável, expressão ou parâmentros possuem um tipo de dados;
+(exemplos: valores inteiros, valores momentários, data, hora,  expressões e etc)
+
+*O tipo de dados especifica o tipo de informações que um objeto suporta.exemplos
+"inteiros, caracteres, valores monetários, data, data e hora, binários etc".
+
+*Os tipos de dados são organizados em: "valores númericos exatos, valores númericos
+aproximados, data e hora, caracteres, caracteres unicode, binários e outros tipos de
+dados;
+(são as organizações mais frequentes em um banco de dados sql)
+
+-----------------------------------------------**
+
+Introdução a sintaxe básica do T-SQL
+* EXISTEM QUATRO PROPRIEDADES BÁSICAS DE UM COMANDO SELECT
+
+1) Numero e atributos das colunas dos resultados;
+2) Tabelas nas quais os resultados serão recuperados;
+3) Condições que as linhas deverão respeitar para serem retornadas;
+4) Sequencia de ordenação das linhas recuperadas;
+
+EXEMPLO:
+1-SELECT productid, Name, ListPrice
+2-FROM Production.Production
+3-WHERE ListPrice > $40
+4-ORDER BY ListPrice ASC
+-----------------------------------------------**
