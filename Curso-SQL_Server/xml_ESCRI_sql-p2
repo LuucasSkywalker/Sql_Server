@@ -1,0 +1,43 @@
+criando um banco de dados
+
+CREATE DATABASE "NOMEDOBANCODEDADOS"
+
+-------------------------------------------------**
+
+* PARA CRIAR UMA TABELA DENTRO DO SQL
+
+CREATE TABLE "NOMEDATABELA" ();
+
+EXEMPLO DE UMA FORMA DE CRIAR UMA TABELA EFICIÊNTE, COM NOME QUE
+INDICAM O QUE TEM DENTRO DELA .
+
+
+Loja de Sucos do Jailson
+
+* Vende sucos (principalmente de Laranja)
+
+* Dados dos clientes:
+	Nome (texto)
+	nascimento (data dd/mm/aaaa)
+	sexo (número)
+	endereço
+		Rua (texto)
+		cidade (texto)
+		Estado (texto)
+	Telefones (texto)
+
+* Dados das vendas
+	Número da venda     (número)
+	cliente que comprou (texto)
+	preço total         (número)
+
+* Dados do produto
+	Nome  (texto)
+    Preço (Número)
+
+CREATE TABLE tb_DadosProdutos (
+  nmProduto VARCHAR(50) NOT NULL,  
+  vlProduto DECIMAL(6,2) NOT NULL
+);
+-------------------------------------------------**
+
